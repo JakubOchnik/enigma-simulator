@@ -4,7 +4,7 @@ A C program which simulates the Enigma machine. It encrypts numerical messages.
 Written entirely in C language. I created it as a project for Algorithms and Data Structures classes. It took about a week to complete. The hardest part was definitely trying to understand the Enigma machine in-depths.
 ## How does it work?
 In short, in Enigma, there are rotors and reflectors. Rotors rotate with every press of a key. Both reflectors and rotors consist of a user-specified alphabet permutation. In this case, the alphabet stands for numbers. 
-![enigma-visualization](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Enigma-action.svg/600px-Enigma-action.svg.png){:height="50%" width="50%"}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Enigma-action.svg/600px-Enigma-action.svg.png" align="center" height="50%" width="50%" >
 <br/>*A simple visualization of Enigma* [*(source)*](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Enigma-action.svg/600px-Enigma-action.svg.png)<br/>
 When a key is pushed, a signal traverses from start through each rotor to reflector. There it gets reversed and goes back a different path. It returns to a different starting position, owned by another letter. And that's the finish, it's our encoded number.
 ## Rotor movement
