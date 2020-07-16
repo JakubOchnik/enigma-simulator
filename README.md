@@ -29,3 +29,43 @@ K - k pairs: rotor number followed by its starting position
 r - index of reflector to use in i-th machine (number from range: 0 - l-1)
 M - a message to encrypt in i-th machine (a sequence of numbers to encrypt separated by whitespaces and ending with 0)
 ```
+## Example input and output
+### Input:
+```
+4
+4
+1 2 4 3
+1 2  
+3 2 1 4 
+0
+4 3 1 2
+0
+3 2 1 4
+0
+3
+2 1 4 3
+4 3 2 1
+1 2 4 3
+6
+1 0 4 2
+1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 0
+1 0 4 0
+1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 0
+1 0 4 1
+1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 0 
+1 2 4 0
+1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 0
+1 3 4 0
+1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 0
+2 0 4 0 1 0
+1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 1 1 1 1 2 2 2 2 3 3 3 3 4 4 4 4 0
+```
+### Output:
+```
+1 1 1 3 2 4 2 2 4 3 4 1 3 2 3 4
+2 3 2 3 1 4 1 4 4 1 4 1 3 2 3 2
+3 4 3 4 4 3 4 3 1 2 1 2 2 1 2 1
+2 3 2 3 1 4 1 4 4 1 4 1 3 2 3 2
+4 4 4 4 3 3 3 3 2 2 2 2 1 1 1 1
+2 2 4 2 3 4 1 4 4 4 2 4 1 2 3 2 2 2 4 2 3 4 1 4 4 4 2 4 1 2 3 2
+```
